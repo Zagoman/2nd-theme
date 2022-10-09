@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --font-display: "Yeseva One", cursive;
+  --font-paragraph: "Ubuntu", sans-serif;
+  --base-line-height: 0.75rem;
+}
+
+html {
+  font-size: 1em;
+}
+body {
+  background-color: #171616;
+  color: #d96009;
+  background-image: url("./45-degree-fabric-light.png");
+  /* background-position: center center; */
+  /* background-size: cover; */
+  /* background-repeat: none; */
+  background-blend-mode: color-dodge;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 5.063rem;
+  line-height: calc(6 * var(--base-line-height));
+  margin-bottom: calc(2 * var(--base-line-height));
+}
+
+h2 {
+  font-size: 3.375rem;
+  line-height: calc(5 * var(--base-line-height));
+  margin-bottom: calc(2 * var(--base-line-height));
+}
+
+h3 {
+  font-size: 2.25rem;
+  line-height: calc(4 * var(--base-line-height));
+  margin-bottom: calc(1 * var(--base-line-height));
+}
+
+h4 {
+  font-size: 1.5rem;
+  /* font-family: var(--font-paragraph); */
+  line-height: calc(3 * var(--base-line-height));
+  margin-bottom: calc(1 * var(--base-line-height));
+}
+
+p {
+  font-family: var(--font-paragraph);
+  font-weight: 300;
+  line-height: calc(2 * var(--base-line-height));
+  margin-bottom: calc(1 * var(--base-line-height));
+  max-width: 62ch;
+}
+
+p.small {
+  font-size: 0.75rem;
+  line-height: calc(1.5 * var(--base-line-height));
+  margin-bottom: calc(1 * var(--base-line-height));
+  font-weight: 400;
+}
+
+header {
+  padding: 2rem;
+}
+
+section {
+  padding: 0rem 2rem;
+}
+
+.one_two_grid {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.one_one_one_grid {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inline {
+  /* display: inline; */
+}
+
+.display {
+  font-family: var(--font-display);
+}
+
+.paragraph {
+  font-family: var(--font-paragraph);
+}
+
+.small_space {
+  height: calc(1 * var(--base-line-height));
+}
+
+.space {
+  height: calc(2 * var(--base-line-height));
+}
+#samples {
+  max-width: 80ch;
+}
